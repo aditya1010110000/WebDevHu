@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+    <head>
+             <meta charset = "UTF-8">
+             <meta name = "author" content = "Aditya Singh">
+             <meta name = "description" content = "This page contains all the things I am learning how to create as I learn HTML." >
+             <title>My first web page</title>
+
+<!-- here we are giving a "Relative referance" in html5.png" because it already exisist in out folder-->
+
+             <link rel = "icon" href = "html5.png" type = "image/x-icon" >
+             <link rel = "stylesheet" href = "main.css" type = "text/css" >
+
+    </head>
+
+    <body>
+               <!--Image tag I tried but not working i dunno know-->
+          <img src = "firefox.png" alt = "my test image"/>
+
+      <header>
+          <h1>My goals for the year</h1>  
+
+          <nav aria-label="primary-navigation">
+            <ul>
+              <li>
+                <a href="#html">Learning HTML</a>
+              </li>
+              <li>
+                <a href="#vacation">Planning a Vacation</a>
+              </li>
+              <li>
+                <a href="#contact">Contact me</a>
+              </li>
+            </ul>
+          </nav>
+      </header>
+          
+          <hr>
+
+          <main>
+
+         <article id="html">
+          <h2>I am not ready, i am hell born ready</h2> 
+          <p>This is my first web page</p>
+          <section>
+            <h3>HTML5</h3>
+          <!--we also use / in last before > in below line it is needed in react not not in html-->
+
+          <img src="html5.png" alt="HTML logo" title="I am learning HTML5" width="260" height="260">
+          <figure>
+            <figcaption>An Example Of HTML5 Code</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello WOrld!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+
+              <!--here in MDN link we are providing "Absolute Referance" because it does not exsist in out page or folder-->
+             
+            <section>
+          <h3>My  Schedule</h3> 
+          <p>Let me tell you how:</p>
+          <!--Ordered list-->
+            <ol>
+            <li>.... I learn more about web dev.</li>
+            <li>.... I plan out my schedule.</li>
+            <li>.... I use resourse from <abbr title = "Mozilla Developer Network"> <a href="https://developer.mozilla.org/">MDN</a> </abbr>.</li>
+           </ol>
+           <aside>
+            <details>
+              <summary>Guess the <mark>no of hours</mark> I code a day</summary>
+              <p>I start at <time datetime="08:00"> 8AM</time> and I write code for <time datetime="PT3H"> 3 hours</time> every morning.</p>
+            </details>
+           </aside>
+           <br>
+           <table>
+            <caption>My Daily Schedule</caption>
+            <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">time</th>
+              <th scope="col">Activity</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <th scope="row">Morning</th>
+              <td>
+                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+              </td>
+              <td>Write Code</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Break</th>
+              <td>
+                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+              </td>
+              <td>Eat Lunch</td>
+            </tr>
+            
+
+            <tr>
+              <th scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12pm</time>-<time datetime="17:00">17pm</time>
+              </td>
+              <td>Study for other courses</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Evening</th>
+              <td rowspan="2" >All other times</td>
+              <td>Free Time</td>
+            </tr>
+
+            <tr>
+              <th scope="row">night</th>
+              <td>Sleep</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3">And that's what i do every day, 5 days a weep. Just eat, sleep, code .. and recharge.</td>
+            </tr>
+          </tfoot>
+           </table>
+          </section>
+          </article>
+        
+
+          <!-- to see the loading things of image sectin by br^150-->
+          <hr>
+
+          <article id="vacation">
+          <h2>I am also planning a Vacation</h2> 
+          <p>i have been working hard and <em> really need a gateway</em>.</p>
+          <p>I live in <abbr title="Kamina Singh">KS</abbr> so i wanna visit a beach.</p>
+
+          <section>
+
+          <h3>Places I'd like to visit</h3> 
+          <!--unordered list-->
+          <ul>
+              <li><p>I've heard good things about the Caribbean.</p>
+                <figure>
+                      <img src="beach.png" alt="Carribian Beach" title="I want to visit a andman beach" width="600" height="400" loading="lazy">
+                      <figcaption>
+                        A beautiful beach of Andaman
+                      </figcaption>
+               </figure>
+            </li>
+          <li>
+            <p>I have heard good thing about going here:</p>
+              <address>
+                   Beaches of The Lakshya Dweep 
+                   <br>
+                   The great islands of Andman and Nikobar
+                   <br>
+                   Beautiful scenries of Gwuhati
+              </address>
+
+             <!-- we can also use single quotation marks instead of dounble not not in next line cause there we are already useing a single quotation mark in 5 o'Clock understand-->
+            <figure>
+              <img src="vacation.png" alt="Andman and Ninobar" title="It's 5 o'Clock Somewhere" width="509" height="339" loading="lazy">
+              <figcaption>A Andaman and Nikobar Image</figcaption>
+            </figure>
+        </li>
+        </ul>
+      </section>
+
+           <!--ToDo: Add more places-->
+           <section>
+          <h3>Places i wanna avoid</h3> 
+          <!--Description list-->
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold</strong>!</dd>
+
+            <dt>Sount Pole</dt>
+            <dd>This is also cold.</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold</dd>
+          </dl>
+        </section>
+        </article>
+        
+        <hr>
+
+        <article id="contact" >
+          <h2>Contact Me</h2>
+          <p>I'd really like to hear from you</p>
+
+           <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+              <legend>Personal Info</legend>
+            <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="jane" autocomplete="on" required autofocus>
+           </p>
+           <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Singh" autocomplete="on" required>
+          </p>
+           <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="your secret"  required>
+          </p>
+           <p>
+            <label for="phone">phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required>
+          </p>
+           <p>
+            <label for="decade">Favorite decade:</label>
+            <input type="number" name="decade" id="decade" min="1950" max="2050" step="10" value="1980">
+          </p>
+          <p>
+            <label for="coffee">Favourite Coffee:</label>
+            <select name="coffee" id="coffee" multiple size="5">
+              <optgroup label="coffees">
+              <option value="regular coffee">Regular Coffee</option>
+              <option value="iced coffee">Iced Coffee</option>
+            </optgroup>
+            <optgroup label="Espresso group">
+              <option value="latte " selected>Latte</option>
+              <option value="cappaccino">Cappaccino</option>
+              <option value="tea">Tea</option>
+            </optgroup>
+              <option value="other">Other</option>
+            </select>
+          </p>
+
+     <!--      <p>
+            <label for="coffee">Favourite Coffee:</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list">
+             <datalist id="coffee-list">
+              <option value="regular coffee">
+              <option value="iced coffee">
+              <option value="latte " selected>
+              <option value="cappaccino">
+              <option value="tea">
+              <option value="other">
+            </datalist>
+          </p> -->
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend>What is your favourite food</legend>
+          <p>
+            <input type="radio" name="food" id="tacos" value="tacos">
+            <label for="tacos">Tacos</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="pizza" value="pizza">
+            <label for="pizza">Pizza</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="other" value="other">
+            <label for="other">Other</label>
+          </p>
+        </fieldset>
+        <br>
+        
+          <fieldset>
+            <legend>Do you have Pets?</legend>
+            <p>
+              <input type="checkbox" name="pets" id="dog" value="dog">
+              <label for="dog">Dog</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="fish" value="fish">
+              <label for="fish">Fish</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="cat" value="cat">
+              <label for="cat">Cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="others" value="others">
+              <label for="others">Others</label>
+            </p>
+          </fieldset>
+          <br>
+
+          <fieldset>
+            <legend>Send me a note</legend>
+            <label for="messege">Your Messege:</label>
+            <br>
+            <textarea name="messege" id="messege" cols="30" rows="10" placeholder="Type your messege here"></textarea>
+          </fieldset>
+          <br>
+          <button type="submit">Submit</button>
+          <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+          <button type="reset">Reset</button>
+
+
+          </form>
+        </article>
+
+      </main>
+
+          <hr>
+        
+          <footer>
+              <!--again we are using "Relative Refeance"-->
+
+              <p>
+          &lt;&lt;&lt; &copy; <a href="about.html">Aditya Singh</a> &gt;&gt;&gt;
+        </p>
+          <p>
+            <a href="#">Back to Top</a>
+          </p>
+        </footer>
+    </body>
+
+</html>

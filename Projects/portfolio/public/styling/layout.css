@@ -1,0 +1,149 @@
+.navbar-base-structure {
+    height: 10vh;
+    width: 1fr 8fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    background-color: #2E3944;
+}
+
+.end-navs {
+width: 7%;
+}
+
+.navbar-main-structure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 36%;
+    padding: 0;
+    margin: 0;
+    min-width: 600px;
+}
+
+.button{
+    background-color: #212A31;
+    width: 17%;
+    height: 5vh;
+    border-radius: 40px;
+    border: 1px solid #D3D9D4;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover{
+    background-color: #2E3944;
+}
+
+.navbar-glow {
+    width: 100%;
+    box-shadow: 0 0px 40px 20px rgb(6, 13, 26);
+}
+
+footer {
+    margin-top: auto;
+}
+
+.footer-glow{
+    border: .3px solid black;
+    box-shadow: 0 0px 40px 20px rgb(6, 13, 26);
+}
+
+.footer {
+    height: 13vh;
+    background-color: #2E3944;
+     border: .3px solid white;
+}
+
+
+
+
+
+
+
+/* for main body background */
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #212A31;
+    /* overflow: hidden; */
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape-container {
+    position: relative;
+    width: 520px;
+    height: 400px;
+    transform: perspective(1000px) rotateY(-30deg);
+    animation: subtle-float 8s infinite ease-in-out;
+}
+
+.shape {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #2E3944;
+    border: 10px solid rgba(116, 141, 146, 0.8);
+    border-radius: 6px;
+    box-shadow: 
+        inset 0 0 60px rgba(116, 141, 146, 0.6),
+        inset 0 0 100px rgba(116, 141, 146, 0.4),
+        inset 0 0 160px rgba(116, 141, 146, 0.2);
+}
+
+/* Inner glow lines */
+.glow-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.glow-lines::before,
+.glow-lines::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(116, 141, 146, 0.8),
+        transparent
+    );
+}
+
+.glow-lines::before {
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    filter: blur(4px);
+}
+
+.glow-lines::after {
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    filter: blur(4px);
+}
+
+@keyframes subtle-float {
+    0%, 100% {
+        transform: perspective(1000px) rotateY(-30deg) translateY(0);
+    }
+    50% {
+        transform: perspective(1000px) rotateY(-30deg) translateY(-20px);
+    }
+}
+

@@ -1,0 +1,235 @@
+.container {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1.5fr 13fr 1.5fr  2fr 3fr 2fr 2fr;
+    grid-template-rows: 11vh ;
+    /* height: 50px; */
+    gap: 0;
+}
+
+.hover:hover{
+    border: 2px solid white;
+}
+
+.box {
+    background-color: #0F1111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amazon-logo {
+    height: 70%;
+    width: 80%;
+}
+
+.two-text {
+    font-size: 16px;
+    color: white;
+}
+
+.two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twoo {
+    height: 70% ;
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.dot {
+    float: left;
+    font-size: 30px;
+    color: white;
+    margin: 2%;
+}
+
+.three {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.threee {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    font-size: 20px;
+    margin: 2.2%;
+    opacity: 65%;
+    margin-left: 3%;
+}
+
+.fourr {
+    height: 70%;
+    width: 100%;
+    background-color: white;
+}
+
+.five {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.fivee {
+    height: 70%;
+    width: 80%;
+    background-color: white;
+    border-radius: 0 7px 7px 0;
+    background-color: rgb(255, 177, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sixx {
+    height: 70% ;
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+select.flag {
+    background-color: #0F1111;
+    font-size: 18px;
+    color: white;
+    border: 0px solid black;
+    font: bolder;
+    font-weight: bold;
+}
+
+.sevenn {
+    height: 70% ;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.lens {
+    background-color: rgb(255, 177, 33);
+    font-size: 30px;
+}
+
+.eightt {
+    height: 70% ;
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.eight-text {
+    color: white;
+}
+
+.ninee {
+    height: 70% ;
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.cart {
+    float: left;
+    font-size: 30px;
+    color: white;
+    margin: 2%;
+}
+
+select#three-id {
+    width: 100%;
+    font-family:sans-serif;
+    height: 100%;
+    font-size:medium;
+    text-align: center;
+    border-radius: 7px 0 0 7px;
+    background-color: rgb(235, 231, 231);
+}
+
+body {
+    margin: 0px;  
+    overflow: hidden;
+}
+
+
+
+
+
+
+.container-2 {
+
+    background-color: #232F3E;
+    height: 6vh;
+    width: 100%;
+    font-size: 1.1rem;
+    color: white;
+    display: grid;
+    grid-template-columns: 1.8fr 3fr 3fr 2.2fr 2.2fr 1.8fr 16fr 6fr ;
+    /* grid-template-rows: 11vh ; */
+    /* height: 50px; */
+    gap: 0;
+}
+
+.common {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common:hover {
+    border: 2px solid white ;
+}
+
+p {
+    margin: 0;
+}
+ 
+.line {
+    /* background-color: white; */
+    color: white;
+    font-size: 20px;
+    padding-right: 5%;
+}
+
+.box1 {
+   width: 100%;
+   height: 100vh;
+   background-image: url(./icons/Copy\ of\ hero_image.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+
+
+.box31 {
+    position: absolute;
+    width: 100%;
+    height: 6vh;
+    margin-top: 40vh;
+}
