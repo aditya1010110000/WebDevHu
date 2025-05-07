@@ -4,8 +4,6 @@ import { useState } from "react";
 import { nanoid } from 'nanoid';
 
 
-
-
 function App(props) {
 
   const [tasks, setTasks] = useState(props.tasks);
@@ -49,25 +47,14 @@ function App(props) {
       if(id === task.id){
         return {...task, name: newName};
       }
+      return task;
     });
     setTasks(editTaskList);
-    
   }
   
   function deleteTask(id) {
-    console.log(id);
-    const updatedTasks = tasks.map((task) => {
-
-      if(id === task.id) {
-        tasks.filter((task)=> id !== tasks.id);
-        return {...task, completed: !task.completed};
-      }
-      return task
-    });
-
+    const updatedTasks = tasks.filter((task) => task.id !== id);
     setTasks(updatedTasks);
-    console.log(tasks);
-
   }
   
 
