@@ -1,6 +1,29 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
 function App() {
+
+
+
+
+  return (
+    <BrowserRouter>
+    <div>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+      </Routes>
+    </div>
+    </BrowserRouter>
+  )
+
+}
+
+export default App
+
+
+
+
 
   {/* 
   Tailwind Properties
@@ -60,13 +83,3 @@ State Classes	hover:*, focus:*, disabled:*, group-hover:*
 
 
  
-
-
-
-  return (
-
-  )
-
-}
-
-export default App
